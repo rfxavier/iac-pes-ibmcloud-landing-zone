@@ -134,7 +134,7 @@ variable "provision_teleport_in_f5" {
 variable "vpn_firewall_type" {
   description = "Bastion type if provisioning bastion. Can be `full-tunnel`, `waf`, or `vpn-and-waf`."
   type        = string
-  default     = null
+  default     = "full-tunnel"
 
   validation {
     error_message = "Bastion type must be `full-tunnel`, `waf`, `vpn-and-waf` or `null`."
