@@ -116,7 +116,7 @@ variable "use_random_cos_suffix" {
 variable "add_edge_vpc" {
   description = "Create an edge VPC. This VPC will be dynamically added to the list of VPCs in `var.vpcs`. Conflicts with `create_f5_network_on_management_vpc` to prevent overlapping subnet CIDR blocks."
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "create_f5_network_on_management_vpc" {
